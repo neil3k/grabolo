@@ -1,10 +1,11 @@
 import random
 
 # Define the possible colors and shapes
-colors = ['Red', 'Blue', 'Green', 'Yellow', 'Purple', 'Orange']
-shapes = ['Circle', 'Square', 'Triangle', 'Star', 'Heart', 'Hexagon']
+colors = ['Red', 'Blue', 'Green', 'Yellow', 'White', 'Black']
+shapes = ['Tree', 'Car', 'Duck', 'Gingerbread Man', 'Rabbit', 'Pig']
 
-items = [(color, shape) for color in colors for shape in shapes]    # List comprehension to generate all possible items
+# List comprehension to generate all possible items
+items = [(color, shape) for color in colors for shape in shapes]  
 
 # Function to pick an item
 def pick_item(items):
@@ -22,7 +23,7 @@ def pick_item(items):
 
 # Main game loop
 def play_game():
-    print("Starting Grabolo!")
+    print(f"Starting Grabolo! Tester")
     
     # Run the game until all items are picked
     while items:
